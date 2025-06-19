@@ -7,7 +7,7 @@ import { Coin } from '../Base'
 bitcoin.initEccLib(ecc)
 const bip32 = BIP32Factory(ecc)
 
-export class BTC extends Coin {
+export class Bitcoin extends Coin {
   constructor(seed: Buffer) {
     super(seed)
   }

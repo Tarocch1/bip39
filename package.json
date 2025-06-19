@@ -16,9 +16,12 @@
   },
   "dependencies": {
     "@ethereumjs/wallet": "^10.0.0",
+    "@solana/kit": "^2.1.1",
     "bip32": "^5.0.0-rc.0",
     "bip39": "^3.1.0",
     "bitcoinjs-lib": "^6.1.7",
+    "bs58": "^6.0.0",
+    "micro-ed25519-hdkey": "^0.1.2",
     "tiny-secp256k1": "^2.2.3"
   },
   "devDependencies": {

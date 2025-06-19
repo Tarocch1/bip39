@@ -1,4 +1,5 @@
-import { BTC } from './BTC'
+import { Bitcoin } from './BTC'
 import { ETH } from './ETH'
+import { Solana } from './SOL'
 
-export const coins = [BTC, ETH]
+export const coins = [Bitcoin, ETH, Solana]
