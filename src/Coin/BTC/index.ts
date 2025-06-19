@@ -16,11 +16,7 @@ export class BTC extends Coin {
   private root = bip32.fromSeed(this.seed, this.network)
 
   async generate(): Promise<void> {
-    const result: {
-      type: string
-      address: string
-      privateKey: string
-    }[] = []
+    const result: { type: string; address: string; privateKey: string }[] = []
 
     result.push(this.generateLegacyAddress())
     result.push(this.generateNestedSegwitAddress())
