@@ -1,0 +1,16 @@
+{
+  "name": "@tarocch1/bip39",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx watch ./src/main.ts"
+  },
+  "dependencies": {
+    "bip39": "^3.1.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
