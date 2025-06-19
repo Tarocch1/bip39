@@ -57,7 +57,11 @@ export class BTC extends Coin {
       pubkey: Buffer.from(child.publicKey),
       network: this.network,
     })
-    return { type: ' Segwit', address: address!, privateKey: child.toWIF() }
+    return {
+      type: 'Native Segwit',
+      address: address!,
+      privateKey: child.toWIF(),
+    }
   }
 
   private generateTaprootAddress() {
