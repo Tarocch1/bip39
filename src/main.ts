@@ -4,15 +4,12 @@ import { coins } from './Coin'
 
 bip39.setDefaultWordlist('english')
 
-const mnemonicInput: string = ''
-const password: string = ''
-
 /** 生成助记词 */
 function getMnemonic() {
   let result = ''
 
-  if (mnemonicInput) {
-    const words = mnemonicInput.split(' ')
+  if (process.env.MNEMONIC) {
+    const words = process.env.MNEMONIC.split(' ')
     result = words
       .filter(Boolean)
       .map((word) => {
@@ -40,7 +37,7 @@ function getMnemonic() {
 
 /** 生成种子 */
 function getSeed(mnemonic: string) {
-  const seed = bip39.mnemonicToSeedSync(mnemonic, password)
+  const seed = bip39.mnemonicToSeedSync(mnemonic, process.env.PASSWORD)
   console.log('seed:', seed.toString('hex'))
   return seed
 }
