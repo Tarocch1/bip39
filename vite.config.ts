@@ -6,6 +6,7 @@ import wasm from 'vite-plugin-wasm'
 import topLevelAwait from 'vite-plugin-top-level-await'
 
 export default defineConfig({
+  base: '/bip39/',
   resolve: { alias: { '@': resolve(__dirname, 'src') } },
   preview: { host: '0.0.0.0', port: 3000, open: 'http://localhost:3000' },
   server: { host: '0.0.0.0', port: 3000, open: 'http://localhost:3000' },
