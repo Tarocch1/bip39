@@ -93,15 +93,20 @@ const validateMnemonic = (mnemonic?: string) => {
 
   // 检查每个单词是否在 BIP39 的英文单词列表中
   for (const word of words) {
-    const realWords = bip39.wordlists.english.filter((item) => item === word)
-    if (realWords.length !== 1) {
+    const realWords = bip39.wordlists.english.filter((item) =>
+      item.startsWith(word),
+    )
+    if (realWords.length === 1) {
+      realMnemonic += `${realWords[0]} `
+    } else if (realWords.length > 1 && realWords.includes(word)) {
+      realMnemonic += `${word} `
+    } else {
       return {
         valid: false,
         message: `Invalid mnemonic word "${word}"`,
         mnemonic: '',
       }
     }
-    realMnemonic += `${realWords[0]} `
   }
   realMnemonic = realMnemonic.trim()
 
