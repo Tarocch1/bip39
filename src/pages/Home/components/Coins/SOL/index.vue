@@ -7,7 +7,7 @@ import { inject } from 'vue'
 import { computedAsync } from '@vueuse/core'
 import type { TableColumn } from '@nuxt/ui'
 import bs58 from 'bs58'
-import { HDKey } from 'micro-ed25519-hdkey'
+import { HDKey } from 'micro-key-producer/slip10.js'
 import { createKeyPairSignerFromPrivateKeyBytes } from '@solana/kit'
 
 import { ctxKey } from '../../../type'

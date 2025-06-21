@@ -26,7 +26,7 @@
     "bitcoinjs-lib": "^6.1.7",
     "bs58": "^6.0.0",
     "buffer": "^6.0.3",
-    "micro-ed25519-hdkey": "^0.1.2",
+    "micro-key-producer": "^0.7.6",
     "tiny-secp256k1": "^2.2.3",
     "valibot": "^1.1.0",
     "vue": "^3.5.17",
