@@ -2,8 +2,6 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import ui from '@nuxt/ui/vite'
-import wasm from 'vite-plugin-wasm'
-import topLevelAwait from 'vite-plugin-top-level-await'
 
 export default defineConfig({
   base: '/bip39/',
@@ -17,7 +15,5 @@ export default defineConfig({
       components: { dts: './src/typings/components.d.ts' },
       ui: { colors: { primary: 'blue', secondary: 'orange' } },
     }),
-    wasm(),
-    topLevelAwait(),
   ],
 })

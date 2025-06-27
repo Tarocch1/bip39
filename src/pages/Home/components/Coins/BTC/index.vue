@@ -6,7 +6,7 @@
 import { inject, computed } from 'vue'
 import type { TableColumn } from '@nuxt/ui'
 import * as bitcoin from 'bitcoinjs-lib'
-import * as ecc from 'tiny-secp256k1'
+import * as ecc from '@bitcoinerlab/secp256k1'
 import BIP32Factory, { type BIP32Interface } from 'bip32'
 
 import { ctxKey } from '../../../type'
