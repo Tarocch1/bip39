@@ -37,7 +37,7 @@
 <script lang="ts" setup>
 import { ref, reactive, inject, watch, computed, useTemplateRef } from 'vue'
 import * as bip39 from 'bip39'
-import * as v from 'valibot'
+import * as z from 'zod'
 
 import InputWithLabel from './InputWithLabel.vue'
 import { ctxKey } from '../../type'
@@ -47,21 +47,16 @@ bip39.setDefaultWordlist('english')
 const ctx = inject(ctxKey)!
 const form = useTemplateRef('form')
 
-const schema = v.object({
-  mnemonic: v.pipe(
-    v.string(),
-    v.rawCheck(({ dataset, addIssue }) => {
-      if (dataset.typed) {
-        const { valid, message } = validateMnemonic(dataset.value)
-        if (!valid) {
-          addIssue({ message })
-        }
-      }
-    }),
-  ),
-  passphrase: v.optional(v.string()),
+const schema = z.object({
+  mnemonic: z.string().superRefine((value, ctx) => {
+    const { valid, message } = validateMnemonic(value)
+    if (!valid) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message })
+    }
+  }),
+  passphrase: z.string().optional(),
 })
-const state = reactive<Partial<v.InferOutput<typeof schema>>>({})
+const state = reactive<Partial<z.output<typeof schema>>>({})
 
 // 自动生成
 const generateLengthOptions = [12, 15, 18, 21, 24]
