@@ -1,11 +1,11 @@
 <template>
   <UForm ref="form" class="form" :schema="schema" :state="state">
     <div class="mnemonic-wrap">
-      <InputWithLabel class="grow" label="Mnemonic">
+      <InputWithLabel class="input" label="Mnemonic">
         <UFormField name="mnemonic">
           <UTextarea
             v-model="state.mnemonic"
-            class="w-full"
+            class="textarea"
             :rows="2"
             autoresize
           />
@@ -15,7 +15,7 @@
       <UButtonGroup class="generate">
         <USelect
           v-model="generateLength"
-          class="w-16"
+          class="select"
           :items="generateLengthOptions"
         />
         <UButton @click="generateMnemonic">Generate</UButton>
@@ -24,7 +24,7 @@
 
     <InputWithLabel label="Passphrase">
       <UFormField name="passphrase">
-        <UInput v-model="state.passphrase" class="w-full" />
+        <UInput v-model="state.passphrase" class="passphrase-input" />
       </UFormField>
     </InputWithLabel>
 
@@ -146,10 +146,26 @@ const seedStr = computed(() => {
 .mnemonic-wrap {
   @apply flex flex-wrap gap-2;
 
+  & > .input {
+    @apply grow;
+
+    .textarea {
+      @apply w-full;
+    }
+  }
+
   & > .generate {
     @apply shrink-0 self-start;
     @apply pl-24 sm:pl-0;
     @apply w-full sm:w-auto;
+
+    .select {
+      @apply w-16;
+    }
   }
+}
+
+.passphrase-input {
+  @apply w-full;
 }
 </style>
