@@ -13,7 +13,9 @@ export default defineConfig({
     ui({
       autoImport: { dts: './src/typings/auto-imports.d.ts' },
       components: { dts: './src/typings/components.d.ts' },
-      ui: { colors: { primary: 'blue', secondary: 'orange' } },
+      ui: {
+        colors: { primary: 'blue', secondary: 'orange', neutral: 'neutral' },
+      },
     }),
   ],
 })
