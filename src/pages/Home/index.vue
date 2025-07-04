@@ -4,10 +4,10 @@
 
     <Mnemonic />
 
-    <hr class="split" />
+    <USeparator type="dashed" />
 
     <div v-for="coin of coins" :key="coin.name" class="coin">
-      <UBadge class="badge" :label="coin.name" />
+      <UBadge :label="coin.name" :ui="{ base: 'mb-2' }" />
       <component :is="coin.component" />
     </div>
   </div>
@@ -38,16 +38,8 @@ provide(ctxKey, ctx)
     @apply text-center text-xl;
   }
 
-  .split {
-    @apply border-accented;
-  }
-
   .coin {
     @apply my-4;
-
-    .badge {
-      @apply mb-2;
-    }
   }
 }
 </style>

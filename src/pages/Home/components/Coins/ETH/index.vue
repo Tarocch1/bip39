@@ -1,5 +1,9 @@
 <template>
-  <UTable class="table-wrap" :data="data" :columns="columns" />
+  <UTable
+    :data="data"
+    :columns="columns"
+    :ui="{ root: 'border border-accented rounded-md' }"
+  />
 </template>
 
 <script lang="ts" setup>
@@ -34,12 +38,3 @@ const generateAddress = (seed: Buffer): DataItem => {
   }
 }
 </script>
-
-<style scoped>
-@reference '@/styles/index.css';
-
-.table-wrap {
-  @apply border border-accented rounded-md;
-  @apply w-full;
-}
-</style>
