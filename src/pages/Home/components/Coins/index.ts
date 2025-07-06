@@ -6,6 +6,7 @@ import { SOL } from './SOL'
 
 export interface Coin {
   name: string
+  icon: string
   component: Component
 }
 

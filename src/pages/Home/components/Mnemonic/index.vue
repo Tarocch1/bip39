@@ -18,7 +18,7 @@
           :items="generateLengthOptions"
           :ui="{ base: 'w-16' }"
         />
-        <UButton @click="generateMnemonic">Generate</UButton>
+        <UButton variant="subtle" @click="generateMnemonic">Generate</UButton>
       </UButtonGroup>
     </div>
 

@@ -7,7 +7,12 @@
     <USeparator type="dashed" />
 
     <div v-for="coin of coins" :key="coin.name" class="coin">
-      <UBadge :label="coin.name" :ui="{ base: 'mb-2' }" />
+      <UBadge
+        :label="coin.name"
+        :icon="coin.icon"
+        variant="subtle"
+        :ui="{ base: 'mb-2' }"
+      />
       <component :is="coin.component" />
     </div>
   </div>
