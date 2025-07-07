@@ -7,12 +7,7 @@
     <USeparator type="dashed" />
 
     <div v-for="coin of coins" :key="coin.name" class="coin">
-      <UBadge
-        :label="coin.name"
-        :icon="coin.icon"
-        variant="subtle"
-        :ui="{ base: 'mb-2' }"
-      />
+      <UBadge :label="coin.name" :icon="coin.icon" variant="subtle" />
       <component :is="coin.component" />
     </div>
   </div>
@@ -35,16 +30,15 @@ provide(ctxKey, ctx)
 
 .wrap {
   @apply mx-auto;
-  @apply px-4;
+  @apply p-4 space-y-4;
   @apply max-w-[1024px];
 
   .title {
-    @apply my-4;
     @apply text-center text-xl;
   }
 
   .coin {
-    @apply my-4;
+    @apply space-y-2;
   }
 }
 </style>

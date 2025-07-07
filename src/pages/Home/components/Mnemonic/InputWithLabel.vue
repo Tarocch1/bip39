@@ -17,8 +17,8 @@ const props = defineProps<{ label: string }>()
 
   & > .label {
     @apply shrink-0 self-start;
-    @apply w-22;
-    @apply text-right text-sm leading-8 font-bold;
+    @apply w-[88px];
+    @apply text-right text-sm leading-8 font-semibold;
 
     & + * {
       @apply grow;

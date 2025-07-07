@@ -1,8 +1,8 @@
 <template>
   <UForm ref="form" class="form" :schema="schema" :state="state">
-    <div class="mnemonic-wrap">
-      <InputWithLabel class="input" label="Mnemonic">
-        <UFormField name="mnemonic">
+    <InputWithLabel label="Mnemonic">
+      <div class="mnemonic-wrap">
+        <UFormField name="mnemonic" :ui="{ root: 'grow' }">
           <UTextarea
             v-model="state.mnemonic"
             :rows="2"
@@ -10,17 +10,17 @@
             :ui="{ root: 'w-full' }"
           />
         </UFormField>
-      </InputWithLabel>
 
-      <UButtonGroup class="generate">
-        <USelect
-          v-model="generateLength"
-          :items="generateLengthOptions"
-          :ui="{ base: 'w-16' }"
-        />
-        <UButton variant="subtle" @click="generateMnemonic">Generate</UButton>
-      </UButtonGroup>
-    </div>
+        <UButtonGroup>
+          <USelect
+            v-model="generateLength"
+            :items="generateLengthOptions"
+            :ui="{ base: 'w-[64px]' }"
+          />
+          <UButton variant="subtle" @click="generateMnemonic">Generate</UButton>
+        </UButtonGroup>
+      </div>
+    </InputWithLabel>
 
     <InputWithLabel label="Passphrase">
       <UFormField name="passphrase">
@@ -135,20 +135,10 @@ const seedStr = computed(() => {
 @reference '@/styles/index.css';
 
 .form {
-  @apply my-4 space-y-4;
-}
+  @apply space-y-2;
 
-.mnemonic-wrap {
-  @apply flex flex-wrap gap-2;
-
-  & > .input {
-    @apply grow;
-  }
-
-  & > .generate {
-    @apply shrink-0 self-start;
-    @apply pl-24 sm:pl-0;
-    @apply w-full sm:w-auto;
+  .mnemonic-wrap {
+    @apply flex flex-wrap items-start gap-2;
   }
 }
 </style>
