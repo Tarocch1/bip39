@@ -39,6 +39,11 @@ provide(ctxKey, ctx)
 
   .coin {
     @apply space-y-2;
+
+    :deep(a) {
+      @apply hover:underline;
+      @apply text-primary-500 hover:text-primary-700;
+    }
   }
 }
 </style>

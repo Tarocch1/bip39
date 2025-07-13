@@ -6,7 +6,7 @@
   />
 </template>
 
-<script lang="ts" setup>
+<script lang="tsx" setup>
 import { inject } from 'vue'
 import { computedAsync } from '@vueuse/core'
 import type { TableColumn } from '@nuxt/ui'
@@ -21,8 +21,20 @@ const ctx = inject(ctxKey)!
 type DataItem = { address: string; privateKey: string }
 
 const columns: TableColumn<DataItem>[] = [
-  { accessorKey: 'address', header: 'Address' },
-  { accessorKey: 'privateKey', header: 'Private Key' },
+  {
+    header: 'Address',
+    accessorKey: 'address',
+    cell: ({ getValue }) => (
+      <a
+        href={`https://solscan.io/account/${getValue()}`}
+        target="_blank"
+        ref="noopener noreferrer"
+      >
+        {getValue()}
+      </a>
+    ),
+  },
+  { header: 'Private Key', accessorKey: 'privateKey' },
 ]
 
 const data = computedAsync<DataItem[]>(async () => {

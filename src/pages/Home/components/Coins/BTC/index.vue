@@ -6,7 +6,7 @@
   />
 </template>
 
-<script lang="ts" setup>
+<script lang="tsx" setup>
 import { inject, computed } from 'vue'
 import type { TableColumn } from '@nuxt/ui'
 import * as bitcoin from 'bitcoinjs-lib'
@@ -23,9 +23,21 @@ const ctx = inject(ctxKey)!
 type DataItem = { type: string; address: string; privateKey: string }
 
 const columns: TableColumn<DataItem>[] = [
-  { accessorKey: 'type', header: 'Type' },
-  { accessorKey: 'address', header: 'Address' },
-  { accessorKey: 'privateKey', header: 'Private Key' },
+  { header: 'Type', accessorKey: 'type' },
+  {
+    header: 'Address',
+    accessorKey: 'address',
+    cell: ({ getValue }) => (
+      <a
+        href={`https://blockstream.info/address/${getValue()}`}
+        target="_blank"
+        ref="noopener noreferrer"
+      >
+        {getValue()}
+      </a>
+    ),
+  },
+  { header: 'Private Key', accessorKey: 'privateKey' },
 ]
 
 const data = computed<DataItem[]>(() => {

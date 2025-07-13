@@ -6,7 +6,7 @@
   />
 </template>
 
-<script lang="ts" setup>
+<script lang="tsx" setup>
 import { inject, computed } from 'vue'
 import type { TableColumn } from '@nuxt/ui'
 import { hdkey } from '@ethereumjs/wallet'
@@ -18,8 +18,20 @@ const ctx = inject(ctxKey)!
 type DataItem = { address: string; privateKey: string }
 
 const columns: TableColumn<DataItem>[] = [
-  { accessorKey: 'address', header: 'Address' },
-  { accessorKey: 'privateKey', header: 'Private Key' },
+  {
+    header: 'Address',
+    accessorKey: 'address',
+    cell: ({ getValue }) => (
+      <a
+        href={`https://etherscan.io/address/${getValue()}`}
+        target="_blank"
+        ref="noopener noreferrer"
+      >
+        {getValue()}
+      </a>
+    ),
+  },
+  { header: 'Private Key', accessorKey: 'privateKey' },
 ]
 
 const data = computed<DataItem[]>(() => {

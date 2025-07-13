@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import ui from '@nuxt/ui/vite'
 
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
   server: { host: '0.0.0.0', port: 3000, open: 'http://localhost:3000' },
   plugins: [
     vue(),
+    vueJsx(),
     ui({
       autoImport: { dts: './src/typings/auto-imports.d.ts' },
       components: { dts: './src/typings/components.d.ts' },
