@@ -29,7 +29,7 @@ const columns: TableColumn<DataItem>[] = [
     accessorKey: 'address',
     cell: ({ getValue }) => (
       <a
-        href={`https://blockstream.info/address/${getValue()}`}
+        href={`https://mempool.space/address/${getValue()}`}
         target="_blank"
         ref="noopener noreferrer"
       >
