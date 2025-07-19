@@ -34,7 +34,7 @@
     "zod": "^4.0.5"
   },
   "devDependencies": {
-    "@tarocch1/eslint-config": "^3.1.0",
+    "@tarocch1/eslint-config": "^3.1.1",
     "@types/node": "^24.0.15",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vitejs/plugin-vue-jsx": "^5.0.1",
