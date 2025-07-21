@@ -1,36 +1,41 @@
 <template>
   <UForm ref="form" class="form" :schema="schema" :state="state">
-    <InputWithLabel label="Mnemonic">
-      <div class="mnemonic-wrap">
-        <UFormField name="mnemonic" :ui="{ root: 'grow' }">
-          <UTextarea
-            v-model="state.mnemonic"
-            :rows="2"
-            autoresize
-            :ui="{ root: 'w-full' }"
-          />
-        </UFormField>
+    <UFormField label="Mnemonic" name="mnemonic">
+      <UTextarea
+        v-model="state.mnemonic"
+        :ui="{ root: 'w-full' }"
+        :rows="2"
+        autoresize
+      />
 
-        <UButtonGroup>
+      <template #hint>
+        <UButtonGroup size="sm">
           <USelect
             v-model="generateLength"
             :items="generateLengthOptions"
             :ui="{ base: 'w-[64px]' }"
+            size="sm"
           />
-          <UButton variant="subtle" @click="generateMnemonic">Generate</UButton>
+          <UButton variant="subtle" size="sm" @click="generateMnemonic">
+            Generate
+          </UButton>
         </UButtonGroup>
-      </div>
-    </InputWithLabel>
+      </template>
+    </UFormField>
 
-    <InputWithLabel label="Passphrase">
-      <UFormField name="passphrase">
-        <UInput v-model="state.passphrase" :ui="{ root: 'w-full' }" />
-      </UFormField>
-    </InputWithLabel>
+    <UFormField label="Passphrase" name="passphrase">
+      <UInput v-model="state.passphrase" :ui="{ root: 'w-full' }" />
+    </UFormField>
 
-    <InputWithLabel label="BIP39 Seed">
-      <UTextarea :model-value="seedStr" :rows="1" autoresize disabled />
-    </InputWithLabel>
+    <UFormField label="BIP39 Seed">
+      <UTextarea
+        :model-value="seedStr"
+        :ui="{ root: 'w-full' }"
+        :rows="1"
+        autoresize
+        disabled
+      />
+    </UFormField>
   </UForm>
 </template>
 
@@ -39,7 +44,6 @@ import { ref, reactive, inject, watch, computed, useTemplateRef } from 'vue'
 import * as bip39 from 'bip39'
 import * as z from 'zod'
 
-import InputWithLabel from './InputWithLabel.vue'
 import { ctxKey } from '../../type'
 
 bip39.setDefaultWordlist('english')
@@ -136,9 +140,5 @@ const seedStr = computed(() => {
 
 .form {
   @apply space-y-2;
-
-  .mnemonic-wrap {
-    @apply flex flex-wrap items-start gap-2;
-  }
 }
 </style>

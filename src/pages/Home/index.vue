@@ -30,10 +30,12 @@ provide(ctxKey, ctx)
 
 .wrap {
   @apply mx-auto;
-  @apply p-4 space-y-4;
+  @apply p-4;
   @apply max-w-[1024px];
+  @apply space-y-4;
 
   .title {
+    @apply mb-8;
     @apply text-center text-xl;
   }
 
