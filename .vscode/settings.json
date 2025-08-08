@@ -1,6 +1,6 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.quickSuggestions": { "strings": true },
+  "editor.quickSuggestions": { "strings": "on" },
   "files.associations": { "*.css": "tailwindcss" },
   "css.lint.unknownAtRules": "ignore",
   "tailwindCSS.classAttributes": ["class", "ui"]
