@@ -1,8 +1,9 @@
 import { resolve } from 'path'
-import { defineConfig } from 'vite'
+
+import ui from '@nuxt/ui/vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import ui from '@nuxt/ui/vite'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   base: '/bip39/',

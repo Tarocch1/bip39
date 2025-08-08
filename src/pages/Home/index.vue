@@ -14,11 +14,11 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, provide } from 'vue'
+import { provide, ref } from 'vue'
 
-import { ctxKey, type Ctx } from './type'
-import Mnemonic from './components/Mnemonic/index.vue'
 import { coins } from './components/Coins'
+import Mnemonic from './components/Mnemonic/index.vue'
+import { type Ctx, ctxKey } from './type'
 
 const ctx: Ctx = { seed: ref(null) }
 

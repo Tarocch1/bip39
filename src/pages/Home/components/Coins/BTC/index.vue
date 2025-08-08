@@ -7,11 +7,11 @@
 </template>
 
 <script lang="tsx" setup>
-import { inject, computed } from 'vue'
-import type { TableColumn } from '@nuxt/ui'
-import * as bitcoin from 'bitcoinjs-lib'
 import * as ecc from '@bitcoinerlab/secp256k1'
+import type { TableColumn } from '@nuxt/ui'
 import BIP32Factory, { type BIP32Interface } from 'bip32'
+import * as bitcoin from 'bitcoinjs-lib'
+import { computed, inject } from 'vue'
 
 import { ctxKey } from '../../../type'
 

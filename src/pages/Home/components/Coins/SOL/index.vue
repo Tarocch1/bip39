@@ -7,12 +7,12 @@
 </template>
 
 <script lang="tsx" setup>
-import { inject } from 'vue'
-import { computedAsync } from '@vueuse/core'
 import type { TableColumn } from '@nuxt/ui'
+import { createKeyPairSignerFromPrivateKeyBytes } from '@solana/kit'
+import { computedAsync } from '@vueuse/core'
 import bs58 from 'bs58'
 import { HDKey } from 'micro-key-producer/slip10.js'
-import { createKeyPairSignerFromPrivateKeyBytes } from '@solana/kit'
+import { inject } from 'vue'
 
 import { ctxKey } from '../../../type'
 

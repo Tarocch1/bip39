@@ -7,9 +7,9 @@
 </template>
 
 <script lang="tsx" setup>
-import { inject, computed } from 'vue'
-import type { TableColumn } from '@nuxt/ui'
 import { hdkey } from '@ethereumjs/wallet'
+import type { TableColumn } from '@nuxt/ui'
+import { computed, inject } from 'vue'
 
 import { ctxKey } from '../../../type'
 

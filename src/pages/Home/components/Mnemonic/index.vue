@@ -40,8 +40,8 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive, inject, watch, computed, useTemplateRef } from 'vue'
 import * as bip39 from 'bip39'
+import { computed, inject, reactive, ref, useTemplateRef, watch } from 'vue'
 import * as z from 'zod'
 
 import { ctxKey } from '../../type'

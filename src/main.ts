@@ -1,8 +1,8 @@
-import { createApp } from 'vue'
 import ui from '@nuxt/ui/vue-plugin'
+import { createApp } from 'vue'
 
-import { router } from './router'
 import App from './App.vue'
+import { router } from './router'
 import './styles/index.css'
 import './bootstrap'
 

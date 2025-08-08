@@ -1,5 +1,6 @@
-import component from './index.vue'
 import type { Coin } from '../index'
+
+import component from './index.vue'
 
 export const ETH: Coin = {
   name: 'Ethereum',
