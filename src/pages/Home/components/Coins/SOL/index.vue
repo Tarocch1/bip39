@@ -8,6 +8,7 @@
 
 <script lang="tsx" setup>
 import type { TableColumn } from '@nuxt/ui'
+
 import { createKeyPairSignerFromPrivateKeyBytes } from '@solana/kit'
 import { computedAsync } from '@vueuse/core'
 import bs58 from 'bs58'
@@ -18,7 +19,10 @@ import { ctxKey } from '../../../type'
 
 const ctx = inject(ctxKey)!
 
-type DataItem = { address: string; privateKey: string }
+interface DataItem {
+  address: string
+  privateKey: string
+}
 
 const columns: TableColumn<DataItem>[] = [
   {
@@ -38,14 +42,16 @@ const columns: TableColumn<DataItem>[] = [
 ]
 
 const data = computedAsync<DataItem[]>(async () => {
-  if (!ctx.seed.value) return []
+  if (!ctx.seed.value) {
+    return []
+  }
 
   return [await generateAddress(ctx.seed.value)]
 }, [])
 
-const generateAddress = async (seed: Buffer): Promise<DataItem> => {
+async function generateAddress(seed: Buffer): Promise<DataItem> {
   const hd = HDKey.fromMasterSeed(seed)
-  const child = hd.derive("m/44'/501'/0'/0'")
+  const child = hd.derive('m/44\'/501\'/0\'/0\'')
   const signer = await createKeyPairSignerFromPrivateKeyBytes(
     new Uint8Array(child.privateKey),
   )

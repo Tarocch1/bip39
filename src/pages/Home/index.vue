@@ -1,6 +1,8 @@
 <template>
   <div class="wrap">
-    <h1 class="title">BIP39 Mnemonic Converter</h1>
+    <h1 class="title">
+      BIP39 Mnemonic Converter
+    </h1>
 
     <Mnemonic />
 
@@ -16,9 +18,11 @@
 <script lang="ts" setup>
 import { provide, ref } from 'vue'
 
+import type { Ctx } from './type'
+
 import { coins } from './components/Coins'
 import Mnemonic from './components/Mnemonic/index.vue'
-import { type Ctx, ctxKey } from './type'
+import { ctxKey } from './type'
 
 const ctx: Ctx = { seed: ref(null) }
 
