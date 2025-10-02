@@ -9,7 +9,7 @@
       />
 
       <template #hint>
-        <UButtonGroup size="sm">
+        <UFieldGroup size="sm">
           <USelect
             v-model="generateLength"
             :items="generateLengthOptions"
@@ -19,7 +19,7 @@
           <UButton variant="subtle" size="sm" @click="generateMnemonic">
             Generate
           </UButton>
-        </UButtonGroup>
+        </UFieldGroup>
       </template>
     </UFormField>
 
@@ -92,7 +92,7 @@ function validateMnemonic(mnemonic?: string) {
 
   // 检查每个单词是否在 BIP39 的英文单词列表中
   for (const word of words) {
-    const realWords = bip39.wordlists.english.filter(item =>
+    const realWords = (bip39.wordlists.english || []).filter(item =>
       item.startsWith(word),
     )
     if (realWords.length === 1) {
