@@ -15,7 +15,7 @@ catalog:
   bitcoinjs-lib: ^6.1.7
   bs58: ^6.0.0
   buffer: ^6.0.3
-  eslint: ^9.36.0
+  eslint: ^9.38.0
   husky: ^9.1.7
   lint-staged: ^16.2.3
   micro-key-producer: ^0.8.2
