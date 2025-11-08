@@ -39,6 +39,7 @@
     "eslint": "catalog:",
     "husky": "catalog:",
     "lint-staged": "catalog:",
+    "prettier-plugin-lint-md": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:"
   },
