@@ -2,12 +2,12 @@ catalog:
   '@antfu/eslint-config': ^6.2.0
   '@bitcoinerlab/secp256k1': ^1.2.0
   '@ethereumjs/wallet': ^10.0.0
-  '@nuxt/ui': ^4.1.0
+  '@nuxt/ui': ^4.2.1
   '@solana/kit': ^5.0.0
   '@tarocch1/eslint-config': ^4.2.2
-  '@types/node': ^24.10.0
-  '@vitejs/plugin-vue': ^6.0.1
-  '@vitejs/plugin-vue-jsx': ^5.1.1
+  '@types/node': ^24.10.1
+  '@vitejs/plugin-vue': ^6.0.2
+  '@vitejs/plugin-vue-jsx': ^5.1.2
   '@vue/tsconfig': ^0.8.1
   '@vueuse/core': ^13.9.0
   bip32: ^5.0.0
@@ -17,14 +17,14 @@ catalog:
   buffer: ^6.0.3
   eslint: ^9.39.1
   husky: ^9.1.7
-  lint-staged: ^16.2.6
+  lint-staged: ^16.2.7
   micro-key-producer: ^0.8.2
   prettier-plugin-lint-md: ^1.0.1
   tailwindcss: ^4.1.17
   typescript: ^5.9.3
-  vite: ^7.2.2
-  vue: ^3.5.24
+  vite: ^7.2.4
+  vue: ^3.5.25
   vue-router: ^4.6.3
-  zod: ^4.1.12
+  zod: ^4.1.13
 
 catalogMode: strict
