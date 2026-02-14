@@ -2,23 +2,23 @@ catalogMode: strict
 shellEmulator: true
 trustPolicy: no-downgrade
 catalog:
-  '@antfu/eslint-config': ^6.7.3
+  '@antfu/eslint-config': ^7.4.3
   '@bitcoinerlab/secp256k1': ^1.2.0
   '@ethereumjs/wallet': ^10.0.0
   '@nuxt/ui': ^4.4.0
-  '@solana/kit': ^5.5.1
-  '@tarocch1/eslint-config': ^4.2.2
-  '@types/node': ^25.2.2
+  '@solana/kit': ^6.0.1
+  '@tarocch1/eslint-config': ^4.3.0
+  '@types/node': ^25.2.3
   '@vitejs/plugin-vue': ^6.0.4
   '@vitejs/plugin-vue-jsx': ^5.1.4
   '@vue/tsconfig': ^0.8.1
-  '@vueuse/core': ^14.1.0
+  '@vueuse/core': ^14.2.1
   bip32: ^5.0.0
   bip39: ^3.1.0
   bitcoinjs-lib: ^7.0.1
   bs58: ^6.0.0
   buffer: ^6.0.3
-  eslint: ^9.39.2
+  eslint: ^10.0.0
   husky: ^9.1.7
   lint-staged: ^16.2.7
   micro-key-producer: ^0.8.2
@@ -27,5 +27,5 @@ catalog:
   typescript: ^5.9.3
   vite: ^7.3.1
   vue: ^3.5.28
-  vue-router: ^4.6.4
+  vue-router: ^5.0.2
   zod: ^4.3.6
