@@ -6,7 +6,7 @@ catalog:
   '@bitcoinerlab/secp256k1': ^1.2.0
   '@ethereumjs/wallet': ^10.0.0
   '@nuxt/ui': ^4.4.0
-  '@solana/kit': ^6.0.1
+  '@solana/kit': ^6.1.0
   '@tarocch1/eslint-config': ^4.3.0
   '@types/node': ^25.2.3
   '@vitejs/plugin-vue': ^6.0.4
