@@ -2394,8 +2394,8 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  defu@6.1.4:
-    resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
+  defu@6.1.6:
+    resolution: {integrity: sha512-f8mefEW4WIVg4LckePx3mALjQSPQgFlg9U8yaPdlsbdYcHQyj9n2zL2LJEA52smeYxOvmd/nB7TpMtHGMTHcug==}
 
   dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
@@ -5008,7 +5008,7 @@ snapshots:
       '@nuxt/devtools-kit': 3.2.2(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3))
       '@nuxt/kit': 4.4.2
       consola: 3.4.2
-      defu: 6.1.4
+      defu: 6.1.6
       fontless: 0.2.1(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.8.3))
       h3: 1.15.9
       magic-regexp: 0.10.0
@@ -5068,7 +5068,7 @@ snapshots:
     dependencies:
       c12: 3.3.3
       consola: 3.4.2
-      defu: 6.1.4
+      defu: 6.1.6
       destr: 2.0.5
       errx: 0.1.0
       exsolve: 1.0.8
@@ -5094,7 +5094,7 @@ snapshots:
     dependencies:
       c12: 3.3.3
       consola: 3.4.2
-      defu: 6.1.4
+      defu: 6.1.6
       destr: 2.0.5
       errx: 0.1.0
       exsolve: 1.0.8
@@ -5118,7 +5118,7 @@ snapshots:
   '@nuxt/schema@4.4.2':
     dependencies:
       '@vue/shared': 3.5.30
-      defu: 6.1.4
+      defu: 6.1.6
       pathe: 2.0.3
       pkg-types: 2.3.0
       std-env: 4.0.0
@@ -5162,7 +5162,7 @@ snapshots:
       '@vueuse/shared': 14.2.1(vue@3.5.31(typescript@5.9.3))
       colortranslator: 5.0.0
       consola: 3.4.2
-      defu: 6.1.4
+      defu: 6.1.6
       embla-carousel-auto-height: 8.6.0(embla-carousel@8.6.0)
       embla-carousel-auto-scroll: 8.6.0(embla-carousel@8.6.0)
       embla-carousel-autoplay: 8.6.0(embla-carousel@8.6.0)
@@ -6771,7 +6771,7 @@ snapshots:
     dependencies:
       chokidar: 5.0.0
       confbox: 0.2.4
-      defu: 6.1.4
+      defu: 6.1.6
       dotenv: 17.3.1
       exsolve: 1.0.8
       giget: 2.0.0
@@ -6884,7 +6884,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  defu@6.1.4: {}
+  defu@6.1.6: {}
 
   dequal@2.0.3: {}
 
@@ -7387,7 +7387,7 @@ snapshots:
     dependencies:
       consola: 3.4.2
       css-tree: 3.1.0
-      defu: 6.1.4
+      defu: 6.1.6
       esbuild: 0.27.3
       fontaine: 0.8.0
       jiti: 2.6.1
@@ -7448,7 +7448,7 @@ snapshots:
     dependencies:
       citty: 0.1.6
       consola: 3.4.2
-      defu: 6.1.4
+      defu: 6.1.6
       node-fetch-native: 1.6.7
       nypm: 0.6.5
       pathe: 2.0.3
@@ -7473,7 +7473,7 @@ snapshots:
     dependencies:
       cookie-es: 1.2.2
       crossws: 0.3.5
-      defu: 6.1.4
+      defu: 6.1.6
       destr: 2.0.5
       iron-webcrypto: 1.2.1
       node-mock-http: 1.0.4
@@ -8782,12 +8782,12 @@ snapshots:
 
   rc9@2.1.2:
     dependencies:
-      defu: 6.1.4
+      defu: 6.1.6
       destr: 2.0.5
 
   rc9@3.0.0:
     dependencies:
-      defu: 6.1.4
+      defu: 6.1.6
       destr: 2.0.5
 
   readdirp@5.0.0: {}
@@ -8817,7 +8817,7 @@ snapshots:
       '@vueuse/core': 14.2.1(vue@3.5.31(typescript@5.9.3))
       '@vueuse/shared': 14.2.1(vue@3.5.31(typescript@5.9.3))
       aria-hidden: 1.2.6
-      defu: 6.1.4
+      defu: 6.1.6
       ohash: 2.0.11
       vue: 3.5.31(typescript@5.9.3)
     transitivePeerDependencies:
@@ -9230,7 +9230,7 @@ snapshots:
   untyped@2.0.0:
     dependencies:
       citty: 0.1.6
-      defu: 6.1.4
+      defu: 6.1.6
       jiti: 2.6.1
       knitwork: 1.3.0
       scule: 1.3.0
