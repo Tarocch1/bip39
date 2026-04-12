@@ -1,9 +1,6 @@
 catalogMode: strict
 shellEmulator: true
 trustPolicy: no-downgrade
-allowBuilds:
-  esbuild: true
-  vue-demi: true
 catalog:
   '@antfu/eslint-config': ^8.1.1
   '@bitcoinerlab/secp256k1': ^1.2.0
