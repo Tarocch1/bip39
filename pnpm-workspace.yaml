@@ -21,14 +21,14 @@ catalog:
   bitcoinjs-lib: ^7.0.1
   bs58: ^6.0.0
   buffer: ^6.0.3
-  eslint: ^10.2.0
+  eslint: ^10.2.1
   husky: ^9.1.7
   lint-staged: ^16.4.0
-  micro-key-producer: ^0.8.5
+  micro-key-producer: ^0.8.6
   prettier-plugin-lint-md: ^1.0.1
-  tailwindcss: ^4.2.2
+  tailwindcss: ^4.2.4
   typescript: ^6.0.3
-  vite: ^8.0.8
-  vue: ^3.5.32
-  vue-router: ^5.0.4
+  vite: ^8.0.10
+  vue: ^3.5.33
+  vue-router: ^5.0.6
   zod: ^4.3.6
