@@ -1,21 +1,23 @@
 catalogMode: strict
 shellEmulator: true
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - semver@6.3.1
 allowBuilds:
   esbuild: true
   vue-demi: true
 catalog:
-  '@antfu/eslint-config': ^8.3.0
+  '@antfu/eslint-config': ^9.1.0
   '@bitcoinerlab/secp256k1': ^1.2.0
   '@ethereumjs/wallet': ^10.0.0
   '@nuxt/ui': ^4.9.0
-  '@solana/kit': ^6.10.0
-  '@tarocch1/eslint-config': ^4.5.0
-  '@types/node': ^25.9.5
+  '@solana/kit': ^7.0.0
+  '@tarocch1/eslint-config': ^4.7.0
+  '@types/node': ^26.1.0
   '@vitejs/plugin-vue': ^6.0.7
   '@vitejs/plugin-vue-jsx': ^5.1.6
   '@vue/tsconfig': ^0.9.1
-  '@vueuse/core': ^14.2.1
+  '@vueuse/core': ^14.3.0
   bip32: ^5.0.1
   bip39: ^3.1.0
   bitcoinjs-lib: ^7.0.1
@@ -23,7 +25,7 @@ catalog:
   buffer: ^6.0.3
   eslint: ^10.6.0
   husky: ^9.1.7
-  lint-staged: ^16.4.0
+  lint-staged: ^17.0.8
   micro-key-producer: ^0.9.0
   prettier-plugin-lint-md: ^1.0.1
   tailwindcss: ^4.3.2
