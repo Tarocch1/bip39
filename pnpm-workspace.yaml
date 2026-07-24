@@ -7,7 +7,7 @@ allowBuilds:
   esbuild: true
   vue-demi: true
 catalog:
-  '@antfu/eslint-config': ^9.1.0
+  '@antfu/eslint-config': ^9.2.0
   '@bitcoinerlab/secp256k1': ^1.2.0
   '@ethereumjs/wallet': ^10.0.0
   '@nuxt/ui': ^4.10.0
@@ -25,7 +25,7 @@ catalog:
   buffer: ^6.0.3
   eslint: ^10.6.0
   husky: ^9.1.7
-  lint-staged: ^17.0.8
+  lint-staged: ^17.1.1
   micro-key-producer: ^0.9.0
   prettier-plugin-lint-md: ^1.0.1
   tailwindcss: ^4.3.3
