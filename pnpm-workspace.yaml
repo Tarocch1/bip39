@@ -10,10 +10,10 @@ catalog:
   '@antfu/eslint-config': ^9.3.0
   '@bitcoinerlab/secp256k1': ^1.2.0
   '@ethereumjs/wallet': ^10.0.0
-  '@nuxt/ui': ^4.10.0
-  '@solana/kit': ^7.1.0
+  '@nuxt/ui': ^4.11.0
+  '@solana/kit': ^7.1.1
   '@tarocch1/eslint-config': ^4.7.0
-  '@types/node': ^26.2.0
+  '@types/node': ^26.3.0
   '@vitejs/plugin-vue': ^6.0.7
   '@vitejs/plugin-vue-jsx': ^5.1.6
   '@vue/tsconfig': ^0.9.1
@@ -23,14 +23,14 @@ catalog:
   bitcoinjs-lib: ^7.0.1
   bs58: ^6.0.0
   buffer: ^6.0.3
-  eslint: ^10.8.1
+  eslint: ^10.9.1
   husky: ^9.1.7
   lint-staged: ^17.3.0
   micro-key-producer: ^0.10.0
   prettier-plugin-lint-md: ^1.0.3
   tailwindcss: ^4.3.3
   typescript: ^6.0.3
-  vite: ^8.2.0
+  vite: ^8.2.2
   vue: ^3.5.41
   vue-router: ^5.2.0
   zod: ^4.4.3
