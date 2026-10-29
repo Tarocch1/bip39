@@ -20,7 +20,7 @@ catalog:
   '@vueuse/core': ^14.4.0
   bip32: ^5.0.1
   bip39: ^3.1.2
-  bitcoinjs-lib: ^7.0.4
+  bitcoinjs-lib: ^7.0.5
   bs58: ^6.0.0
   buffer: ^6.0.3
   eslint: ^10.13.0
@@ -30,7 +30,7 @@ catalog:
   prettier-plugin-lint-md: ^1.0.3
   tailwindcss: ^4.3.3
   typescript: ^6.0.3
-  vite: ^8.3.4
+  vite: ^8.3.5
   vue: ^3.5.44
   vue-router: ^5.4.0
   zod: ^4.6.7
