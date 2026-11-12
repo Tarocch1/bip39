@@ -28,9 +28,9 @@ catalog:
   lint-staged: ^17.6.0
   micro-key-producer: ^0.10.2
   prettier-plugin-lint-md: ^1.0.3
-  tailwindcss: ^4.3.4
+  tailwindcss: ^4.3.5
   typescript: ^6.0.3
-  vite: ^8.3.5
-  vue: ^3.5.44
+  vite: ^8.3.7
+  vue: ^3.5.45
   vue-router: ^5.4.0
   zod: ^4.6.7
